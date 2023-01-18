@@ -166,7 +166,7 @@ else{
     console.log('the == opertor does the type coercion');
 }
 if (height === '23')
-{
+{ 
     console.log('the == opertor does the type coercion');
 }
 
@@ -177,15 +177,61 @@ var ageharry=calculateAge(1990);
 console.log( ageharry);
 var agejohn=calculateAge(1989);
 console.log(agejohn);
-// array
+// array initaialization
 var names = ['jons','shashi', 'ram','seema'];
 console.log(names);
 console.log(names [2]);
+console.log(names[0]);
 console.log(names.length);
+// mutated array data
 names[1] ='ben';
 names[2] ='abc';
-names[names.length] ='harry';
 console.log(names);
+names[names.length] ='harry';
+names[names.length] ='neha';
+console.log(names); 
+// different datatypes
+var john =['john','smith',1997,'teacher',false];
+john.push('blue');
+john.unshift('mr');
+console.log(john);
+john.pop();
+john.pop();
+john.shift();
+console.log(john);
+console.log(john.indexOf('smith'));
+console.log(john.indexOf(23));
+var isdesigner =john.indexOf('designer') === -1 ? 'john is not a designer': 'john is designer';
+console.log( isdesigner);
+// objects and propertise
+var shashi= {
+    firstName:'shashi',
+    lastName:'yadav',
+    birthyear:1997,
+    family:['mother','father','brother'] ,
+    job:'teacher',
+    isMarried:false
+};
+console.log(shashi);
+console.log(shashi.job);
+console.log(shashi.lastName);
+console.log(shashi['firstName']);
+var x ='birthyear';
+console.log(shashi[x]);
+shashi.job ='designer';
+shashi['isMarried']=true;
+console.log(shashi);
+// new object  syntax
+var john= new Object();
+john.name='john';
+john.birthyear=1996;
+console.log(john);
+
+
+
+
+
+
 
     
 
