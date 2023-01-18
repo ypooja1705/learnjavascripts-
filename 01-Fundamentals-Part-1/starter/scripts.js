@@ -161,15 +161,15 @@ console.log(firstName +' ' + lastName);
 // else{
 //     console.log('variable is not defined');
 // }
-// // if (height == '23');
-// {
-//     console.log('the == opertor does the type coercion');
-// }
-// if (height === '23')
-// {
-//     console.log('the == opertor does the type coercion');
-// }
-// function
+ if (height == '23');
+{
+    console.log('the == opertor does the type coercion');
+}
+if (height === '23')
+{
+    console.log('the == opertor does the type coercion');
+}
+
 function calculateAge(birthyear)
 { return 2018-birthyear ;
 }
