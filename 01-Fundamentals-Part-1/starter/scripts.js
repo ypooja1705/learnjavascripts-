@@ -153,14 +153,14 @@ console.log(firstName +' ' + lastName);
 //     default:
 //         console.log (firstName+ 'is doing something else') ;      
 // }
-// var height;
-// height=234;//in meters
-// if(height){
-//     console.log('variable is defined');
-// }
-// else{
-//     console.log('variable is not defined');
-// }
+var height;
+height=235;//in meters
+if(height){
+    console.log('variable is defined');
+}
+else{
+    console.log('variable is not defined');
+}
  if (height == '23');
 {
     console.log('the == opertor does the type coercion');
