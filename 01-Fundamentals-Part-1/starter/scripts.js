@@ -226,15 +226,80 @@ var john= new Object();
 john.name='john';
 john.birthyear=1996;
 console.log(john);
+// objects and methods
+var shashi= {
+    firstName:'shashi',
+    lastName:'yadav',
+    birthyear:1997,
+    family:['mother','father','brother'] ,
+    job:'teacher',
+    isMarried:false,
+    calcAge:function(birthyear)
+    {
+        return 2018-birthyear;
+    }
+};
+console.log(shashi.calcAge(1990));
 
+// using this ,its points to current objects shashi
 
+var shashi= {
+    firstName:'shashi',
+    lastName:'yadav',
+    birthyear:1997,
+    family:['mother','father','brother'] ,
+    job:'teacher',
+    isMarried:false,
+    calcAge:function()
+    {
+        this.age= 2018-this.birthyear;
+    }
+};
+shashi.calcAge();
+console.log(shashi);
+// loops and iteration
+// for loop
+for( var i=0; i<10; i++)
+{
+    console.log(i);
+}
+for(var i=1; i<=20;i++)
+{
+ console.log(i) ;  
+}
+var sansha=['abc','pyt','ram','sita'];
+for( var i=0; i<sansha.length; i++)
+{
+    console.log(sansha[i]);
+}
+//while loop
+var i= 0;
+while(i<sansha.length)
+{
+    console.log(sansha[i]);
+    i++;
+}
+// continue and break
+var john =['shashi','smith',1997,'teacher',false];
+for(var i=0; i<john.length ;i++)
+{
+    if (typeof john [i] !=='string')
+    continue;
+    console.log(john[i]);
+}
 
-
-
-
-
+for(var i=0; i< john.length ; i++)
+{
+    if (typeof john [i] !=='string')
+    break;
+    console.log(john[i]);
+}
+// backword looping iteration
+for( var i=john.length ;i>=0 ;i--)
+{
+    console.log(john[i]);
+}
     
-
 
 
 
